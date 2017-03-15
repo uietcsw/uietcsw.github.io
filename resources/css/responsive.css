@@ -34,7 +34,7 @@
 @media only screen and (max-width: 320px){
   nav ul a{
     display: table;
-    width: 100%;
+    width: 50%;
   }
   nav li{
     display: table-cell;
