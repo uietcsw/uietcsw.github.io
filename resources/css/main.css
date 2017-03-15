@@ -468,8 +468,8 @@ body{
 nav {
 	height: 50px;
 	width: 100%;
-	background-color: #2980b9;
-	border-bottom: 1px solid #fff;
+	background-color: #34495E;
+	border-bottom: 1px solid #2980b9;
 	position: fixed;
 }
 
@@ -506,8 +506,8 @@ nav li {
 
 nav ul a:hover,
 nav ul a:active {
-  color: #2980b9;
-	background-color: #fff;
+  color: #fff;
+	background-color: #2980b9;
 }
 
 /*
