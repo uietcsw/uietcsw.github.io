@@ -439,10 +439,15 @@ a{
 	color: transparent;
 }
 
+html{
+	height: 100%;
+}
+
 body{
 	font-family: 'Lato', 'Arial', 'Helvettica', sans-serif;
 	background-color: #2980b9;
 	color: #fff;
+	height: inherit;
 }
 
 /*
@@ -466,10 +471,10 @@ body{
 */
 
 nav {
-	height: 50px;
+	height: 100px;
 	width: 100%;
 	background-color: #34495E;
-	position: fixed;
+	position: relative;
 }
 
 nav ul {
@@ -500,7 +505,7 @@ nav li {
 	display: inline-block;
 	text-align: center;
 	height: inherit;
-	padding-top: 15px;
+	padding-top: 40px;
 }
 
 nav ul a:hover,
@@ -513,7 +518,8 @@ nav ul a:active {
 		CONTAINER
 */
 .container{
-	padding-top: 8%;
+	padding-top: 6%;
+	padding-bottom: 6%;
 	width: 80%;
 	margin: 0 auto;
 	letter-spacing: 2px;
@@ -571,29 +577,48 @@ nav ul a:active {
 	background-color: #fff;
 }
 
+/*
+		FOOTER
+*/
+
+footer{
+	letter-spacing: 0;
+	font-size: 10px;
+	background-color: #34495E;
+	position: relative;
+	height: 100px;
+}
+
+.exit{
+	margin: 0 auto;
+	letter-spacing: 1px;
+	padding-top: 45px;
+	float: right;
+	padding-right: 10px;
+}
 
 /*
 		TEXT SELECTION COLORS
 */
 
 ::selection{
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 }
 ::-webkit-selection{
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 }
 ::-moz-selection{
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 }
 ::-o-selection{
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 }
 
 ::-ms-selection{
-	background-color: #333;
-	color: #fff;
+	background-color: #fff;
+	color: #000;
 }

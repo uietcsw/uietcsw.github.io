@@ -1,15 +1,21 @@
 /*RESPONSIVE DESIGN*/
 
 @media only screen and (max-width: 720px) {
+  nav{
+    height: 50px;
+  }
   nav ul{
     width: 100%;
   }
   nav ul a{
     width: 25%;
   }
+  nav li{
+    padding-top: 15px;
+  }
   .container{
-    width: 100%;
-    padding-top: 80px;
+    width: 95%;
+    padding-top: 40px;
     padding-left: 10px;
   }
   .container h1{
@@ -29,14 +35,26 @@
     color: #fff;
     background-color: #2980b9;
   }
+
+  footer{
+    height: 50px;
+  }
+  .exit{
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 320px){
-  nav ul a{
-    display: table;
-    width: 50%;
-  }
   nav li{
-    display: table-cell;
+    display: inline-block;
+  }
+  .container h1{
+    font-size: 32px;
+  }
+  .container h3{
+    font-size: 18px;
   }
 }
