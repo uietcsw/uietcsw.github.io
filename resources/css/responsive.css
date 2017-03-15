@@ -30,3 +30,13 @@
     background-color: #2980b9;
   }
 }
+
+@media only screen and (max-width: 320px){
+  nav ul a{
+    display: table;
+    width: 100%;
+  }
+  nav li{
+    display: table-cell;
+  }
+}

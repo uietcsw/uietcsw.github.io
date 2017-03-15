@@ -469,13 +469,12 @@ nav {
 	height: 50px;
 	width: 100%;
 	background-color: #34495E;
-	border-bottom: 1px solid #2980b9;
 	position: fixed;
 }
 
 nav ul {
 	padding: 0;
-	//float: right;
+	float: right;
 	margin: 0 auto;
 	width: 400px;
 	height: 100%;
@@ -506,8 +505,8 @@ nav li {
 
 nav ul a:hover,
 nav ul a:active {
-  color: #fff;
-	background-color: #2980b9;
+  color: #34495E;
+	background-color: #fff;
 }
 
 /*
