@@ -439,6 +439,12 @@ a{
 	color: transparent;
 }
 
+/*
+    COLORS
+
+    blue: #2980b9;
+*/
+
 html{
 	height: 100%;
 }
@@ -473,7 +479,7 @@ body{
 nav {
 	height: 100px;
 	width: 100%;
-	background-color: #34495E;
+	background-color: #2980b9;
 	position: relative;
 }
 
@@ -520,9 +526,16 @@ nav ul a:active {
 .container{
 	padding-top: 6%;
 	padding-bottom: 6%;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	letter-spacing: 2px;
+  background-color: #34495E;
+}
+
+.container section,
+.container .wtf{
+  width: 80%;
+  margin: 0 auto;
 }
 
 .container h1{
@@ -584,7 +597,6 @@ nav ul a:active {
 footer{
 	letter-spacing: 0;
 	font-size: 10px;
-	background-color: #34495E;
 	position: relative;
 	height: 100px;
 }
