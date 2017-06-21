@@ -660,7 +660,7 @@ nav ul a:hover,
 nav ul a:active {
   color: #222;
 	background-color: #fff;
-  
+
 }
 
 /*
@@ -701,8 +701,8 @@ nav ul a:active {
 
 .wtf{
 	padding-top: 10px;
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 300;
 }
 
 .logo{
@@ -724,6 +724,7 @@ nav ul a:active {
 }
 
 .btn{
+  font-weight: bold;
 	width: inherit;
 	text-align: center;
 	border: 1px solid #fff;
@@ -739,12 +740,12 @@ nav ul a:active {
 
 .btn:hover,
 .btn:active{
-	color: #2980b9;
+	color: #222;
 	background-color: #fff;
 }
 
 .btn code{
-  font-weight: 300;
+  font-weight: bold;
   font-size: 16px;
 }
 
