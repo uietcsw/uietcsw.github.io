@@ -288,6 +288,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font-weight: 300;
 }
 
 /**
@@ -621,7 +622,7 @@ nav {
 	position: relative;
   background-color: transparent;
   padding-right: 10%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 nav ul {
@@ -667,21 +668,28 @@ nav ul a:active {
 		CONTAINER
 */
 .container{
-	padding-top: 6%;
-	padding-bottom: 6%;
-	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 80%;
 	margin: 0 auto;
 	letter-spacing: 1px;
 }
 
-.container section,
-.container .wtf{
-  width: 80%;
-  margin: 0 auto;
+.hero--left,
+.hero--right{
+  width: 40%;
+  float: left;
 }
 
-.container h1{
-	margin:0;
+.container section,
+.container .wtf{
+  width: 100%;
+}
+
+h1.big{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
 	font-weight: 300;
 }
 
@@ -694,6 +702,14 @@ nav ul a:active {
 	font-weight: 300;
 }
 
+.container h3 a{
+  color: #fff;
+}
+
+.container h3 a span{
+  font-size: 80%;
+}
+
 .resources{
   margin-top: 10px;
   padding-bottom: 10px;
@@ -703,11 +719,6 @@ nav ul a:active {
 	padding-top: 10px;
   font-size: 1.3em;
   font-weight: 300;
-}
-
-.logo{
-	width: 50px;
-	padding-left: 20px;
 }
 
 /*
@@ -728,8 +739,8 @@ nav ul a:active {
 	width: inherit;
 	text-align: center;
 	border: 1px solid #fff;
-  border-radius: 300px;
-	padding: 20px;
+  border-radius: 2px;
+	padding: 15px;
 	margin-top: 20px;
 	transition: all 100ms linear;
   -webkit-transition: all 100ms linear;
@@ -750,7 +761,7 @@ nav ul a:active {
 }
 
 .width-def-block{
-  width: 300px;
+  width: 30%;
   display: inline-block;
 }
 

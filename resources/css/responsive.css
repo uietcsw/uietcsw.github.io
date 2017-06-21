@@ -14,12 +14,12 @@
   nav li{
     padding-top: 15px;
   }
+  .main{
+    display: none;
+  }
   .container{
     padding-top: 40px;
     padding-left: 10px;
-  }
-  .container h1{
-    padding-bottom: 10px;
   }
   .container h3{
     letter-spacing: 1px;
