@@ -754,6 +754,10 @@ nav ul a:active {
   display: inline-block;
 }
 
+.width-def-block-list{
+  width: 300px;
+}
+
 /*
 		FOOTER
 */
