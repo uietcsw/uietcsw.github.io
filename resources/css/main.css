@@ -746,7 +746,7 @@ nav ul a:active {
 
 .btn code{
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .width-def-block{
@@ -755,7 +755,7 @@ nav ul a:active {
 }
 
 .width-def-block-list{
-  width: 300px;
+  width: 400px;
 }
 
 /*
