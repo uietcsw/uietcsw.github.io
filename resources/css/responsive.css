@@ -3,6 +3,7 @@
 @media only screen and (max-width: 720px) {
   nav{
     height: 50px;
+    padding-right: 0;
   }
   nav ul{
     width: 100%;
@@ -14,20 +15,16 @@
     padding-top: 15px;
   }
   .container{
-    width: 95%;
     padding-top: 40px;
     padding-left: 10px;
   }
   .container h1{
-    font-size: 48px;
     padding-bottom: 10px;
   }
   .container h3{
-    font-size: 22px;
     letter-spacing: 1px;
   }
   .wtf{
-    font-size: 16px;
     line-height: 1.25em;
   }
   .btn:hover,
@@ -52,9 +49,7 @@
     display: inline-block;
   }
   .container h1{
-    font-size: 32px;
   }
   .container h3{
-    font-size: 18px;
   }
 }

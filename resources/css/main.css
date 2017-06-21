@@ -1,3 +1,137 @@
+/*
+ *  Modern Scale Typography.css by typecast.com
+ */
+
+ body {
+   font-size: 100%;
+ }
+
+ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+   font-size-adjust: 0.5;
+ }
+
+ #page {
+   font-size: 1em;
+   /* equivalent to 16px */
+   line-height: 1.25;
+   /* equivalent to 20px */
+ }
+
+ @media (min-width: 43.75em) {
+   #page {
+     font-size: 1em;
+     /* equivalent to 16px */
+     line-height: 1.375;
+     /* equivalent to 22px */
+   }
+ }
+
+ h1 {
+   font-size: 2em;
+   /* 2x body copy size = 32px */
+   line-height: 1.25;
+   /* 45px / 36px */
+ }
+
+ @media (min-width: 43.75em) {
+   h1 {
+     font-size: 2.5em;
+     /* 2.5x body copy size = 40px */
+     line-height: 1.125;
+   }
+ }
+
+ @media (min-width: 56.25em) {
+   h1 {
+     font-size: 3em;
+     /* 3x body copy size = 48px */
+     line-height: 1.05;
+     /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+   }
+ }
+
+ h2 {
+   font-size: 1.625em;
+   /* 1.625x body copy size = 26px */
+   line-height: 1.15384615;
+   /* 30px / 26px */
+ }
+
+ @media (min-width: 43.75em) {
+   h2 {
+     font-size: 2em;
+     /* 2x body copy size = 32px */
+     line-height: 1.25;
+   }
+ }
+
+ @media (min-width: 56.25em) {
+   h2 {
+     font-size: 2.25em;
+     /* 2.25x body copy size = 36px */
+     line-height: 1.25;
+   }
+ }
+
+ h3 {
+   font-size: 1.375em;
+   /* 1.375x body copy size = 22px */
+   line-height: 1.13636364;
+   /* 25px / 22px */
+ }
+
+ @media (min-width: 43.75em) {
+   h3 {
+     font-size: 1.5em;
+     /* 1.5x body copy size = 24px */
+     line-height: 1.25;
+   }
+ }
+
+ @media (min-width: 56.25em) {
+   h3 {
+     font-size: 1.75em;
+     /* 1.75x body copy size = 28px */
+     line-height: 1.25;
+   }
+ }
+
+ h4 {
+   font-size: 1.125em;
+   /* 1.125x body copy size = 18px */
+   line-height: 1.11111111;
+ }
+
+ @media (min-width: 43.75em) {
+   h4 {
+     line-height: 1.22222222;
+     /* (22px / 18px */
+   }
+ }
+
+ blockquote {
+   font-size: 1.25em;
+   /* 20px / 16px */
+   line-height: 1.25;
+   /* 25px / 20px */
+ }
+
+ @media (min-width: 43.75em) {
+   blockquote {
+     font-size: 1.5em;
+     /* 24px / 16px = */
+     line-height: 1.45833333;
+     /* 35px / 24px */
+   }
+ }
+
+
+
+
+
+
+
+
 /*NORMALIZE.CSS*/
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -451,7 +585,12 @@ html{
 
 body{
 	font-family: 'Lato', 'Arial', 'Helvettica', sans-serif;
-	background-color: #2980b9;
+  background-image: linear-gradient(45deg,#002f4b,#dc4225);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #222;
 	color: #fff;
 	height: inherit;
 }
@@ -477,10 +616,12 @@ body{
 */
 
 nav {
-	height: 100px;
+	height: 60px;
 	width: 100%;
-	background-color: #2980b9;
 	position: relative;
+  background-color: transparent;
+  padding-right: 10%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 nav ul {
@@ -492,7 +633,7 @@ nav ul {
 }
 
 nav ul a {
-	color: #fff;
+  color: rgba(255,255,255,0.7);
 	display: inline;
 	float: left;
 	width: 100px;
@@ -507,17 +648,19 @@ nav ul a {
 
 nav li {
 	color: inherit;
-	font-size: 16px;
+	font-size: 14px;
+  font-weight: bold;
 	display: inline-block;
 	text-align: center;
 	height: inherit;
-	padding-top: 40px;
+	padding-top: 20px;
 }
 
 nav ul a:hover,
 nav ul a:active {
-  color: #34495E;
+  color: #222;
 	background-color: #fff;
+  
 }
 
 /*
@@ -528,8 +671,7 @@ nav ul a:active {
 	padding-bottom: 6%;
 	width: 100%;
 	margin: 0 auto;
-	letter-spacing: 2px;
-  background-color: #34495E;
+	letter-spacing: 1px;
 }
 
 .container section,
@@ -540,28 +682,38 @@ nav ul a:active {
 
 .container h1{
 	margin:0;
-	font-size: 72px;
 	font-weight: 300;
 }
 
+.container h2{
+  margin: 0;
+  font-weight: 400;
+}
+
 .container h3{
-	font-size: 2em;
-	font-weight: 500;
+	font-weight: 300;
+}
+
+.resources{
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 .wtf{
-	margin-top: 20px;
-	font-size: 20px;
+	padding-top: 10px;
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .logo{
-	width: 72px;
+	width: 50px;
 	padding-left: 20px;
 }
 
 /*
 		BUTTONS
 */
+
 
 .link{
 	width: 250px;
@@ -575,6 +727,7 @@ nav ul a:active {
 	width: inherit;
 	text-align: center;
 	border: 1px solid #fff;
+  border-radius: 300px;
 	padding: 20px;
 	margin-top: 20px;
 	transition: all 100ms linear;
@@ -590,6 +743,16 @@ nav ul a:active {
 	background-color: #fff;
 }
 
+.btn code{
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.width-def-block{
+  width: 300px;
+  display: inline-block;
+}
+
 /*
 		FOOTER
 */
@@ -598,16 +761,18 @@ footer{
 	letter-spacing: 0;
 	font-size: 10px;
 	position: relative;
-	height: 100px;
+	height: 20px;
 }
 
 .exit{
 	margin: 0 auto;
 	letter-spacing: 1px;
-	padding-top: 45px;
 	float: right;
 	padding-right: 10px;
 }
+
+
+    //EXTRA CSS PROPERTIES
 
 /*
 		TEXT SELECTION COLORS
