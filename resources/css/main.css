@@ -1,4 +1,35 @@
 /*
+		TEXT SELECTION COLORS
+    Overriding the default values
+
+*/
+
+::selection{
+	background-color: #002f4b;
+  color: #dc4225;
+}
+
+::-webkit-selection{
+  background-color: #002f4b;
+  color: #dc4225;
+}
+
+::-moz-selection{
+	background-color: #002f4b;
+	color: #dc4225;
+}
+
+::-o-selection{
+	background-color: #002f4b;
+	color: #dc4225;
+}
+
+::-ms-selection{
+	background-color: #002f4b;
+	color: #dc4225;
+}
+
+/*
  *  Modern Scale Typography.css by typecast.com
  */
 
@@ -773,10 +804,11 @@ h1.big{
 		FOOTER
 */
 
+
 footer{
-	letter-spacing: 0;
-	font-size: 10px;
+	font-size: 12px;
 	position: relative;
+  border-top: 1px solid rgba(255,255,255,0.3);
 	height: 20px;
 }
 
@@ -789,29 +821,3 @@ footer{
 
 
     //EXTRA CSS PROPERTIES
-
-/*
-		TEXT SELECTION COLORS
-*/
-
-::selection{
-	background-color: #fff;
-	color: #000;
-}
-::-webkit-selection{
-	background-color: #fff;
-	color: #000;
-}
-::-moz-selection{
-	background-color: #fff;
-	color: #000;
-}
-::-o-selection{
-	background-color: #fff;
-	color: #000;
-}
-
-::-ms-selection{
-	background-color: #fff;
-	color: #000;
-}
