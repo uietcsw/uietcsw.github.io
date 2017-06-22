@@ -167,6 +167,17 @@
  	background: url('img/default.svg') 50% 50% no-repeat #002f4b;
  }
 
+.back-1,
+.back-2,
+.back-3,
+.back-4,
+.back-5{
+	font-family: 'Lato';
+	margin: 20px 40px;
+	opacity: 0;
+}
+
+
 
 
 

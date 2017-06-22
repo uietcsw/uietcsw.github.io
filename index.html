@@ -37,14 +37,35 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(window).load(function() {
-		$(".loader").delay(5000).fadeOut("slow");
+		$(".back-1").delay(1000).fadeTo("slow",1);
+		$(".back-2").delay(2000).fadeTo("slow",1);
+		$(".back-3").delay(3000).fadeTo("slow",1);
+		$(".back-4").delay(4000).fadeTo("slow",1);
+		$(".back-5").delay(5000).fadeTo("slow",1);
+		$(".loader").delay(6000).fadeOut("slow");
 	})
 	</script>
 
 </head>
 <body>
 
-	<div class="loader"></div>
+	<div class="loader">
+		<div class="back-1">
+			Loading Modules.....
+		</div>
+		<div class="back-2">
+			Loading Respositories.....
+		</div>
+		<div class="back-3">
+			Loading Data.....
+		</div>
+		<div class="back-4">
+			Loading Props.....
+		</div>
+		<div class="back-5">
+			Loading Complete.....
+		</div>
+	</div>
 
 	<nav class="clearfix">
 		<ul class="clearfix">
