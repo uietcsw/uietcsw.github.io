@@ -1,46 +1,11 @@
 /*
-
-    SMOOTH SCROLL SCRIPT 
-    From CHRIS COYIER
-    CSS-TRICKS.com
-    All Copyrights to their reserved owners.
-
+  Loading Function
 */
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-
-
-/*
-
-    NAVIGATION PULL DOWN WHEN WIDTH GOES BELOW 480px
-
-*/
-
-$(function() {
-      var pull    = $('#pull');
-        menu    = $('nav ul');
-        menuHeight  = menu.height();
-      $(pull).on('click', function(e) {
-        e.preventDefault();
-        menu.slideToggle();
-      });
-      $(window).resize(function(){
-            var w = $(window).width();
-            if(w > 480 && menu.is(':hidden')) {
-              menu.removeAttr('style');
-            }
-        });
-    });
+$(window).load(function() {
+  $(".back-1").delay(1000).fadeTo("slow",1);
+  $(".back-2").delay(2000).fadeTo("slow",1);
+  $(".back-3").delay(3000).fadeTo("slow",1);
+  $(".back-4").delay(4000).fadeTo("slow",1);
+  $(".back-5").delay(5000).fadeTo("slow",1);
+  $(".loader").delay(6500).fadeOut("slow");
+})
