@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,500,700,800);
+
 /*
 		TEXT SELECTION COLORS
     Overriding the default values
@@ -174,7 +176,7 @@
 .back-3,
 .back-4,
 .back-5{
-	font-family: 'Lato';
+	font-family: 'Raleway';
 	margin: 20px 40px;
 	opacity: 0;
 	letter-spacing: 1px;
@@ -638,7 +640,7 @@ a{
 
 
 body{
-	font-family: 'Lato', 'Arial', 'Helvettica', sans-serif;
+	font-family: 'Raleway', 'Arial', 'Helvettica', sans-serif;
   background-image: linear-gradient(45deg,#002f4b,#dc4225);
   background-attachment: fixed;
   background-position: center;
@@ -759,7 +761,7 @@ h1.big{
 .wtf{
 	padding-top: 10px;
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /*
@@ -823,7 +825,80 @@ footer{
 }
 
 .exit{
+	font-weight: 300;
 	font-size: 10px;
-	letter-spacing: 1px;
 	text-align: center;
+}
+
+/*
+		FORMS
+*/
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+-moz-input::placeholder,
+-moz-textarea::placeholder{
+	color: rgba(255,255,255,0.3);
+}
+
+.form{
+  font-family: 'Raleway';
+  margin-top: 20px;
+  font-weight: 800;
+}
+
+.form div{
+  width: 60%;
+  padding: 5px 0 5px 0;
+}
+
+input[type=text], select, textarea {
+  display: inline;
+  background: transparent;
+  color: #fff;
+  font-size: 130%;
+  width: 100%;
+  padding: 10px;
+  border: 5px solid rgba(255,255,255,0.1);
+  margin-top: 6px;
+  resize: both;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+}
+
+option{
+  background: transparent !important;
+  color: #222;
+}
+
+input[type=text]:focus,
+textarea:focus{
+  outline: none !important;
+  background:rgba(255,255,255,1);
+  color: #222;
+  border: 5px solid #fff;
+  transform: scale(1.1);
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 200px;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+}
+
+input[type=submit]:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #222;
 }

@@ -6,14 +6,14 @@
 	<!--META TAGS-->
 	<meta charset=utf-8>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!--FAVICON-->
 	<link rel="shortcut icon" href="resources/favicon/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="resources/favicon/favicon.ico" type="image/x-icon">
 
 	<!--TITLE-->
-  <title>Question Papers | UIETCSW &mdash; Confederate of Student Welfare | University Institute of Engineering &amp; Technology</title>
+  <title>Home | UIETCSW &mdash; Confederate of Student Welfare | University Institute of Engineering &amp; Technology</title>
 
   <!--STYLESHEETS-->
 
@@ -34,6 +34,9 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="resources/js/script.js"></script>
+
 </head>
 <body>
 	<div class="loader"></div>
@@ -47,59 +50,41 @@
 	</nav>
 
 	<div class="container clearfix">
-		<h1 class="big">
-			CSW&nbsp;UIET&nbsp;&nbsp;
-		</h1>
-		<h2>
-			/branch
-		</h2>
-		<section class="resources">
-			<div class="link width-def-block">
-				<a href="./branch/cse.html">
-					<div class="btn">
-						<code>CSE</code> &nbsp; <span class="lnr lnr-chevron-right"></span>
-					</div>
-				</a>
-			</div>
-			<div class="link width-def-block">
-				<a href="./branch/it.html">
-					<div class="btn">
-						<code>IT</code> &nbsp; <span class="lnr lnr-chevron-right"></span>
-					</div>
-				</a>
-			</div>
-			<div class="link width-def-block">
-				<a href="./branch/ece.html">
-					<div class="btn">
-						<code>ECE</code> &nbsp; <span class="lnr lnr-chevron-right"></span>
-					</div>
-				</a>
-			</div>
-			<div class="link width-def-block">
-				<a href="./branch/eee.html">
-					<div class="btn">
-						<code>EEE</code> &nbsp; <span class="lnr lnr-chevron-right"></span>
-					</div>
-				</a>
-			</div>
-			<div class="link width-def-block">
-				<a href="./branch/mech.html">
-					<div class="btn">
-						<code>MECH</code> &nbsp; <span class="lnr lnr-chevron-right"></span>
-					</div>
-				</a>
-			</div>
-			<div class="link width-def-block">
-				<a href="./branch/biotech.html">
-					<div class="btn">
-						<code>BIO-TECH</code> &nbsp; <span class="lnr lnr-chevron-right"></span>
-					</div>
-				</a>
-			</div>
-		</section>
 
-	</div>
-
+		<section>
+			<h1 class="big">
+				CSW&nbsp;UIET&nbsp;&nbsp;
+			</h1>
+			<h3>
+				Contact
+			</h3>
+			<div class="wtf">
+				Contact us for any technical problems or issues related to links or something not working
+			</div>
+			<form action="#" class="form">
+				<div>
+		    	<input type="text" id="name" name="firstname" placeholder="What Do We Call You.." required autocomplete="off">
+				</div>
+				<div>
+		    	<input type="text" id="email" name="mail" placeholder="Your Mail ID..." required autocomplete="off">
+				</div>
+				<div>
+		    	<select name="branch" required>
+						<option value="default" disabled>- Select Your Branch -</option>
+						<option value="cse">CSE</option>
+		      	<option value="it">IT</option>
+		      	<option value="ece">ECE</option>
+		      	<option value="eee">EEE</option>
+						<option value="mechanical">MECHANICAL</option>
+						<option value="biotech">BIO-TECH</option>
+		    	</select>
+				</div>
+				<div>
+		    	<textarea id="subject" name="subject" placeholder="What is this in regard to?...(Just give us a few words)" style="height:100px" required autocomplete="off"></textarea>
+				</div>
+		    <input type="submit" value="Submit">
+		  </form>
+		</div>
 	<footer>
 		<div class="exit">
 			Copyright &copy; UIETCSW 2017
@@ -109,7 +94,6 @@
 
 	<!--WEB SCRIPT OPTIMIZATION-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="resources/js/script.js"></script>
 
 </body>
 </html>
