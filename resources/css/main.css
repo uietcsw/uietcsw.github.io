@@ -865,8 +865,8 @@ input[type=text], select, textarea {
   border: 5px solid rgba(255,255,255,0.1);
   margin-top: 6px;
   resize: both;
-  transition: all 200ms linear;
-  -webkit-transition: all 200ms linear;
+  transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
 }
 
 option{
