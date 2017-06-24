@@ -14,8 +14,14 @@
     width: 100%;
     padding: 40px 10px 10px 10px;
   }
-  .container h3,
-  .container h2{
+  .container div.hero{
+  	width: 95%;
+  	border-left: 5px solid #fff;
+  	border-bottom: 5px solid #fff;
+  	padding-left: 10px;
+  }
+  .container div h3,
+  .container div h2{
     font-size: 1.2em;
     font-weight: 400;
   }
