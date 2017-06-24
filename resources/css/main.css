@@ -688,7 +688,7 @@ nav ul {
 
 nav ul a {
   color: #222;
-	display: inline;
+	display: table;
 	float: left;
 	width: 100px;
 	height: inherit;
@@ -704,10 +704,10 @@ nav li {
 	color: inherit;
 	font-size: 14px;
   font-weight: bold;
-	display: inline-block;
+	display: table-cell;
+	vertical-align: middle !important;
 	text-align: center;
 	height: inherit;
-	padding-top: 20px;
 }
 
 nav ul a:hover,
@@ -726,7 +726,7 @@ nav ul a:active {
 	width: 80%;
 	min-height: 100%;
 	margin: 0 auto;
-	letter-spacing: 1px;
+	line-height: 1.5em;
 	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
@@ -760,8 +760,25 @@ h1.big{
 
 .wtf{
 	padding-top: 10px;
-  font-size: 1.3em;
-  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.wtf p{
+	width: 80%;
+	padding-top: 10px;
+}
+
+.wtf p span{
+	padding: 5px 0 5px 20px;
+}
+
+.wtf p span a{
+	color: inherit;
+}
+
+p ul li{
+	list-style-type: circle;
 }
 
 /*
@@ -880,7 +897,7 @@ textarea:focus{
   background:rgba(255,255,255,1);
   color: #222;
   border: 5px solid #fff;
-  transform: scale(1.1);
+  transform: translate3d(20px,0,0);
 }
 
 /* Style the submit button with a specific background color etc */

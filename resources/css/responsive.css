@@ -2,7 +2,6 @@
 
 @media only screen and (max-width: 720px) {
   nav{
-    height: 50px;
     padding-right: 0;
   }
   nav ul{
@@ -11,19 +10,21 @@
   nav ul a{
     width: 25%;
   }
-  nav li{
-    padding-top: 15px;
-  }
   .container{
     width: 100%;
     padding: 40px 10px 10px 10px;
   }
-  .container h3{
+  .container h3,
+  .container h2{
     font-size: 1.2em;
+    font-weight: 400;
   }
   .wtf{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.25em;
+  }
+  .wtf p{
+    width: 100%;
   }
   .hero--left,
   .hero--right{
@@ -38,9 +39,6 @@
   }
   .width-def-block-list{
     width: 275px;
-  }
-  .container h2{
-    font-size: 16px;
   }
   .btn code{
     font-size: 12px;
