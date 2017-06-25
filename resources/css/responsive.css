@@ -14,7 +14,6 @@
   nav ul a:active {
     color: #2ECC71;
   	background-color: #222;
-  	-webkit-animation: none 50ms infinite linear;
   }
   .container{
     width: 100%;
