@@ -10,11 +10,6 @@
   nav ul a{
     width: 25%;
   }
-  nav ul a:hover,
-  nav ul a:active {
-    color: #2ECC71;
-  	background-color: #222;
-  }
   .container{
     width: 100%;
     padding: 40px 10px 10px 10px;
