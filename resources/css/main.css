@@ -4,28 +4,28 @@
 */
 
 ::selection{
-	background-color: #002f4b;
-  color: #dc4225;
+	background-color: #0078e7;
+  color: #fff;
 }
 
 ::-webkit-selection{
-  background-color: #002f4b;
-  color: #dc4225;
+  background-color: #0078e7;
+  color: #fff;
 }
 
 ::-moz-selection{
-	background-color: #002f4b;
-	color: #dc4225;
+	background-color: #0078e7;
+	color: #fff;
 }
 
 ::-o-selection{
-	background-color: #002f4b;
-	color: #dc4225;
+	background-color: #0078e7;
+	color: #fff;
 }
 
 ::-ms-selection{
-	background-color: #002f4b;
-	color: #dc4225;
+	background-color: #0078e7;
+	color: #fff;
 }
 
 /*
@@ -155,8 +155,6 @@
    }
  }
 
-
-
 .loader,
 .intro{
  	position: fixed;
@@ -167,7 +165,7 @@
  	z-index: 9999;
 }
 .loader{
-	background: url('img/loading.svg') 50% 50% no-repeat #222;
+	background: url('img/loading.svg') 50% 50% no-repeat #fff;
 }
 
 /*NORMALIZE.CSS*/
@@ -711,11 +709,6 @@ nav ul a:active {
   float: left;
 }
 
-.container section,
-.container .wtf{
-  width: 70%;
-}
-
 h1.big{
   width: 100%;
   margin: 40px 0;
@@ -728,16 +721,9 @@ h1.big span{
 	margin-right: 5px;
 }
 
-/*Creating a fallback*/
-
-/* .set-def--blue{
-	color: #fff;
+h2{
+  font-weight: normal;
 }
-
-.set-def--pink{
-	color: #fff;
-} */
-
 
 .container div.hero{
   color: #777;
@@ -761,6 +747,7 @@ h1.big span{
 .wtf{
 	padding-top: 10px;
   font-size: 1.2em;
+  line-height: 1.5em;
   font-weight: 300;
 }
 
@@ -784,7 +771,6 @@ p ul li{
 /*
 		BUTTONS
 */
-
 
 .link a{
 	color: #222;
@@ -821,7 +807,16 @@ p ul li{
 }
 
 .width-def-block-list{
-  width: 400px;
+  width: 500px !important;
+  display: inline;
+}
+
+.set-width-70 {
+  width: 70%;
+}
+
+.set-width-85{
+  width: 80%; 
 }
 
 /*
@@ -830,11 +825,11 @@ p ul li{
 
 
 footer{
-	position:relative;
-	bottom: 0;
+  position:relative;
+	bottom: 10px;
 	padding: 20px;
 	width: 100%;
-	height: 60px;
+	height: 65px;
 }
 
 .exit{
@@ -857,40 +852,6 @@ form div{
   padding: 5px 0;
 }
 
-/* input::placeholder,
-textarea::placeholder {
-  color: rgba(255,255,255,0.3);
-}
-
--moz-input::placeholder,
--moz-textarea::placeholder{
-	color: rgba(255,255,255,0.3);
-}
-
-
-input[type=text], select, textarea {
-  display: inline;
-  color: #222;
-  font-size: 130%;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid rgba(0,0,0,0.5);
-  margin-top: 6px;
-  resize: both;
-  transition: all 100ms linear;
-  -webkit-transition: all 100ms linear;
-}
-
-
-input[type=text]:focus,
-textarea:focus{
-  outline: none !important;
-  background:rgba(255,255,255,1);
-  color: #222;
-  border: 5px solid #fff;
-  transform: translate3d(32px,0,0);
-}*/
-
 input[type=text],
 input[type=email] {
   width: 300px;
@@ -900,4 +861,11 @@ button[type=submit] {
   height: 40px;
   width: 150px !important;
   cursor: pointer;
+}
+
+#map {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  height: 500px;
 }

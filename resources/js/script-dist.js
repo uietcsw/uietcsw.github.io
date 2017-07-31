@@ -1,1 +1,0 @@
-$(window).load(function(){$(".loader").fadeIn("slow"),$(".loader").delay(1e3).fadeOut("slow")});
